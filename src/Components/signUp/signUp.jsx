@@ -15,6 +15,7 @@ const SignUp = () => {
   const [isCnfPasswordFocused, setIsCnfPasswordFocused] = useState(false);
 
   const validateEmail = (value) => {
+    console.log(value);
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     setEmailValid(emailRegex.test(value));
   };
